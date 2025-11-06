@@ -1,0 +1,15 @@
+# Logs
+*.log
+
+# Environment / Secrets
+*.env
+*.key
+*.pem
+
+# Docker artifacts
+volumes/
+docker-compose.override.yml
+
+# Python
+__pycache__/
+*.pyc
