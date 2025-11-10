@@ -96,7 +96,7 @@ sudo systemctl daemon-reload
 
 ## Notes
 
-- The camera must be reachable from the Pi (e.g., Ethernet IP `192.168.10.50`).
+- The camera must be reachable from the Pi (e.g., Ethernet IP `192.168.0.50`).
 - Make sure **only one camera** is connected per Pi to avoid IP conflicts.
 - You can adjust ports or camera IP by editing:
   ```bash
@@ -104,6 +104,12 @@ sudo systemctl daemon-reload
   ```
 
 ---
+
+## Docker
+docker buildx build --platform linux/amd64,linux/arm64 -t itamarkela/pi-camera-port-forwarding --push .
+
+docker run --privileged -d --restart always --name pi-camera-port-forwarding itamarkela/pi-camera-port-forwarding
+
 
 ## Author
 

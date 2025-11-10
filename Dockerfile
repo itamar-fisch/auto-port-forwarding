@@ -19,6 +19,9 @@ WORKDIR /app
 # Copy your scripts into the image
 COPY auto-camera-setup.sh entrypoint.sh ./
 
+# Verify files were copied
+RUN ls -la /app
+
 # Ensure scripts have execution permission
 RUN chmod +x /app/*.sh
 
