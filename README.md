@@ -22,6 +22,7 @@ The setup script:
    - **123 (UDP / NTP)**
    - **161 (UDP / SNMP)**
    - **5004–5005 (UDP / RTP / RTCP)** – Video transport
+   - **7681 (TCP / WebSocket)** – Video streaming
 
 ---
 
