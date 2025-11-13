@@ -27,6 +27,7 @@ echo "🚀 Starting port forwarding..."
 /usr/bin/socat UDP-LISTEN:5004,reuseaddr,fork UDP:$CAMERA_IP:5004 &
 /usr/bin/socat UDP-LISTEN:5005,reuseaddr,fork UDP:$CAMERA_IP:5005 &
 /usr/bin/socat UDP-LISTEN:7681,reuseaddr,fork UDP:$CAMERA_IP:7681 &
+/usr/bin/socat UDP-LISTEN:9008,reuseaddr,fork UDP:$CAMERA_IP:9008 &
 
 
 echo "✅ Port forwarding started"
