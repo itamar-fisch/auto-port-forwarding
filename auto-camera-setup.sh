@@ -21,12 +21,12 @@ echo "🚀 Starting port forwarding..."
 /usr/bin/socat TCP-LISTEN:1935,reuseaddr,fork TCP:$CAMERA_IP:1935 &
 /usr/bin/socat TCP-LISTEN:21,reuseaddr,fork TCP:$CAMERA_IP:21 &
 /usr/bin/socat TCP-LISTEN:25,reuseaddr,fork TCP:$CAMERA_IP:25 &
+/usr/bin/socat TCP-LISTEN:7681,reuseaddr,fork TCP:$CAMERA_IP:7681 &
 /usr/bin/socat UDP-LISTEN:53,reuseaddr,fork UDP:$CAMERA_IP:53 &
 /usr/bin/socat UDP-LISTEN:123,reuseaddr,fork UDP:$CAMERA_IP:123 &
 /usr/bin/socat UDP-LISTEN:161,reuseaddr,fork UDP:$CAMERA_IP:161 &
 /usr/bin/socat UDP-LISTEN:5004,reuseaddr,fork UDP:$CAMERA_IP:5004 &
 /usr/bin/socat UDP-LISTEN:5005,reuseaddr,fork UDP:$CAMERA_IP:5005 &
-/usr/bin/socat UDP-LISTEN:7681,reuseaddr,fork UDP:$CAMERA_IP:7681 &
 /usr/bin/socat UDP-LISTEN:9008,reuseaddr,fork UDP:$CAMERA_IP:9008 &
 
 
