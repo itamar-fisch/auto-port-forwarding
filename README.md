@@ -110,7 +110,7 @@ sudo systemctl daemon-reload
 ## Docker
 docker buildx build --platform linux/amd64,linux/arm64 -t itamarkela/pi-camera-port-forwarding --push .
 
-docker run --privileged -d --restart always --name pi-camera-port-forwarding itamarkela/pi-camera-port-forwarding
+docker run --privileged -d --restart always --name pi-camera-port-forwarding itamarkela/pi-camera-port-forwarding 102
 
 
 ## Author
