@@ -5,7 +5,8 @@ set -e
 # bash /app/eth-static-ip-setup.sh
 
 echo "Starting Raspberry Pi camera setup container..."
-bash /app/auto-camera-setup.sh
+# Pass all arguments from docker run to the internal script
+bash /app/auto-camera-setup.sh "$@"
 
 echo "✅ Setup complete. Container is now running."
 tail -f /dev/null
